@@ -29,4 +29,14 @@ class Solution:
             else:
                 return False
         return True
+
+
+'''
+
+Idea: Perform normal palindrome check for single string in a helper method, during main function use two pointers and if front and back chars are same move pointers in by 1.
+If not then you need to check both deleting from back and deleting from front and see if its a palindrome, if neither are palindromes return False. If you make it out of while 
+loop without calling helper then you know its a normal palindome.
+
+
+'''
             

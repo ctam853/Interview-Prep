@@ -35,3 +35,11 @@ class Solution:
                 bstring = "0" + bstring
             anum = anum // 2
         return bstring
+
+
+'''
+Idea: Create two helpers, one to convert from binary to int, and one to convert from int to binary.
+Convert both binary strings to ints and add them, then pass that int to binary converter helper and return that.
+Pretty basic just remember how to write helpers. 
+
+'''

@@ -16,3 +16,14 @@ class Solution:
             else:
                 sum_dict[curr_sum] = 1
         return count
+
+
+'''
+Idea: Keep a dictionary with cumulative sums as keys and number of times those sums have appeared as values
+Then iterate over array and keep adding value of num. If the current sum - k is already in dictionary we know we have a subarray with sum = k at dict[sum - k]
+So if sum - k in dict we can add the total number of times that sum - k has appeared to our count.
+Then if the sum is unique we add it to the dict if not we just increment the times we've seen it by 1
+
+If stuck just draw array and write out the cumulative sum. Then you can see all the different times the end - start of a subarray = k
+
+'''
